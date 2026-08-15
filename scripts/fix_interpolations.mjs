@@ -1,0 +1,10 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const path = '/home/ubuntu/lumera-ecommerce/scripts/build_lumera_ui.mjs';
+let text = await readFile(path, 'utf8');
+const start = text.indexOf("  'client/src/App.tsx': `");
+const end = text.indexOf("`,\n};", start);
+const block = text.slice(start, end);
+const fixed = block.replaceAll('${', '\\${');
+text = text.slice(0, start) + fixed + text.slice(end);
+await writeFile(path, text);
+console.log('escaped nested interpolations');
