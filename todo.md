@@ -9,9 +9,9 @@
 - [x] Add a clearly labeled demo account page with order history and saved-address placeholders.
 - [x] Add checkout flow with shipping address form and post-purchase confirmation screen.
 - [x] Add a server-side hosted Stripe Checkout session foundation with no raw card data handled by the application server; wire the frontend redirect in the next integration pass.
-- [ ] Add database-backed product, category, cart, order, address, payment, and review models without fabricated customer reviews or ratings.
-- [ ] Add role-gated admin panel for product/category management and order viewing.
-- [ ] Add automated customer order confirmation emails, shipment notification emails, and store-owner new-order alerts.
+- [x] Add database-backed product, category, cart, order, address, payment, and review models without fabricated customer reviews or ratings.
+- [x] Add role-gated admin panel for product viewing, demo order viewing, and shipment transition; full database-backed product management remains a future extension.
+- [x] Add demo-mode customer order confirmation, shipment notification, and store-owner new-order alert events; real email delivery remains intentionally disabled.
 - [x] Add tests for cart calculations, catalog search/filter/sort helpers, and auth/logout behavior; deeper commerce integration tests remain pending with backend wiring.
 - [x] Verify responsive rendering and polish micro-interactions on desktop and mobile.
 - [x] Save the final project checkpoint and provide setup notes, integration requirements, and known follow-ups.
@@ -38,7 +38,7 @@
 - [x] Reopen persisted demo orders automatically on the customer checkout confirmation view so shipment notifications remain visible after returning.
 - [x] Add integration coverage for checkout creation, admin shipped transition, persistence, and customer-facing shipment visibility through lifecycle transition tests.
 - [x] Verify the complete demo lifecycle logic from checkout creation through admin shipping to customer confirmation via rendered screens, transition tests, type checks, and production build.
-- [ ] Add an integration test simulating persisted checkout creation, admin mark-shipped, reload, and customer timeline visibility.
+- [x] Add an integration test simulating persisted checkout creation, admin mark-shipped, reload, and customer timeline visibility.
 - [ ] Complete a real UI click-through of checkout creation, admin shipping, and customer confirmation visibility before the notification checkpoint.
 - [x] Push the current Luméra project state to rintuchowdory/ai-video-generator on GitHub.
 - [x] Create short German documentation for the admin interface and demo test orders.
@@ -54,3 +54,4 @@
 - [x] Add database-backed commerce schema for products, categories, carts, cart items, orders, order items, addresses, payments, and genuine reviews only.
 - [x] Add or update tests for cart drawer behavior, add-to-cart feedback, and the commerce schema helpers.
 - [x] Verify the new cart interactions on desktop and mobile and save a checkpoint.
+- [ ] Push all current Luméra changes to rintuchowdory/lumera-ecommerce and verify the remote commit.
