@@ -8,6 +8,13 @@
       "when": 1786836374405,
       "tag": "0000_burly_vulcan",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786906568433,
+      "tag": "0001_misty_red_wolf",
+      "breakpoints": true
     }
   ]
 }

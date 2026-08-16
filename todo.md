@@ -49,3 +49,8 @@
 - [x] Verify the standalone Luméra GitHub repository contains all expected project files and passes validation.
 - [x] Create a German local setup and development-server guide for Luméra.
 - [x] Create a presentation overview of the current Luméra project state and repository structure.
+- [x] Add an animated accessible slide-out cart drawer with overlay, close controls, quantity/removal actions, and live totals.
+- [x] Add clear add-to-cart feedback including a toast or inline confirmation and cart count update.
+- [x] Add database-backed commerce schema for products, categories, carts, cart items, orders, order items, addresses, payments, and genuine reviews only.
+- [x] Add or update tests for cart drawer behavior, add-to-cart feedback, and the commerce schema helpers.
+- [x] Verify the new cart interactions on desktop and mobile and save a checkpoint.
