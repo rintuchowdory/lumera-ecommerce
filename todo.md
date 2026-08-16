@@ -29,5 +29,14 @@
 - [x] Add catalog search, filtering, and sorting helper coverage.
 - [x] Capture a mobile viewport verification screenshot and correct any responsive issues.
 - [x] Restrict checkout country selection to the confirmed single-market demo assumption.
-- [ ] Implement demo order lifecycle events that surface customer confirmation, shipment, and owner alert delivery to RintuChowdory@yahoo.com.
+- [x] Implement demo order lifecycle events that surface customer confirmation, shipment, and owner alert delivery to RintuChowdory@yahoo.com.
 - [x] Add explicit focus-visible styling for buttons, links, cart controls, navigation triggers, and product-card actions, then verify keyboard navigation across core flows.
+- [x] Implement end-to-end demo order lifecycle events: customer order confirmation, owner new-order alert to RintuChowdory@yahoo.com, and shipment notification, with no real email sending.
+- [x] Add a persisted demo order status and timeline so confirmation and owner alert fire at creation while shipment fires only after a shipped transition.
+- [x] Add a demo admin/order action to mark an order shipped and surface the resulting shipment notification to the customer.
+- [x] Verify lifecycle progression across checkout, admin, and confirmation screens before the next checkpoint.
+- [x] Reopen persisted demo orders automatically on the customer checkout confirmation view so shipment notifications remain visible after returning.
+- [x] Add integration coverage for checkout creation, admin shipped transition, persistence, and customer-facing shipment visibility through lifecycle transition tests.
+- [x] Verify the complete demo lifecycle logic from checkout creation through admin shipping to customer confirmation via rendered screens, transition tests, type checks, and production build.
+- [ ] Add an integration test simulating persisted checkout creation, admin mark-shipped, reload, and customer timeline visibility.
+- [ ] Complete a real UI click-through of checkout creation, admin shipping, and customer confirmation visibility before the notification checkpoint.
