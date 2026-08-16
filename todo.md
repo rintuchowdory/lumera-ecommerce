@@ -40,3 +40,5 @@
 - [x] Verify the complete demo lifecycle logic from checkout creation through admin shipping to customer confirmation via rendered screens, transition tests, type checks, and production build.
 - [ ] Add an integration test simulating persisted checkout creation, admin mark-shipped, reload, and customer timeline visibility.
 - [ ] Complete a real UI click-through of checkout creation, admin shipping, and customer confirmation visibility before the notification checkpoint.
+- [x] Push the current Luméra project state to rintuchowdory/ai-video-generator on GitHub.
+- [x] Create short German documentation for the admin interface and demo test orders.
