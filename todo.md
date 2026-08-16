@@ -54,4 +54,4 @@
 - [x] Add database-backed commerce schema for products, categories, carts, cart items, orders, order items, addresses, payments, and genuine reviews only.
 - [x] Add or update tests for cart drawer behavior, add-to-cart feedback, and the commerce schema helpers.
 - [x] Verify the new cart interactions on desktop and mobile and save a checkpoint.
-- [ ] Push all current Luméra changes to rintuchowdory/lumera-ecommerce and verify the remote commit.
+- [x] Push all current Luméra changes to rintuchowdory/lumera-ecommerce and verify the remote commit.
