@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestelllebenszyklus im Demo-Modus</title>
+  <style>
+    *{box-sizing:border-box}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif;position:relative}
+    .wrap{padding:58px 88px 0}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;font-weight:700;color:#66747b}
+    h1{font-size:64px;line-height:.95;letter-spacing:-4px;margin:28px 0 0;font-weight:900;max-width:760px}
+    h1 em{font-weight:400;font-style:italic}
+    .intro{font-size:19px;line-height:1.4;color:#4a565d;max-width:650px;margin-top:18px}
+    /* Tighten timeline spacing to save vertical space */
+    .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;position:relative}
+    .timeline:before{content:"";position:absolute;left:0;right:0;top:42px;border-top:2px solid #0a0a0a}
+    .step{position:relative;z-index:1;min-height:170px}
+    .dot{width:22px;height:22px;background:#0a0a0a;border:6px solid #eef1f2;margin-bottom:26px}
+    .step:nth-child(2) .dot{background:#edc8cc}
+    .step:nth-child(3) .dot{background:#cbdfe8}
+    .num{font:700 14px 'Courier New',monospace;color:#a0525f;letter-spacing:2px}
+    .event{font:700 23px 'Courier New',monospace;margin-top:13px}
+    .recipient{font-size:16px;line-height:1.4;color:#4a565d;margin-top:14px;max-width:270px}
+    .status{display:inline-block;margin-top:14px;padding:6px 9px;background:#fff;font:13px 'Courier New',monospace}
+    .note{position:absolute;left:88px;right:88px;bottom:72px;border-top:2px solid #0a0a0a;padding-top:12px;font-size:16px;color:#4a565d}
+    .note strong{color:#0a0a0a}
+    .accent{position:absolute;width:120px;height:120px;background:#edc8cc;right:78px;top:70px;transform:rotate(18deg);z-index:0}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="accent"></div>
+    <div class="wrap">
+      <div class="eyebrow">03 / Order lifecycle</div>
+      <h1>Drei Ereignisse.<br><em>Ein klarer Status.</em></h1>
+      <div class="intro">Die Demo trennt Bestellung, Owner-Alert und Versand bewusst voneinander — ohne echte E-Mail-Zustellung.</div>
+      <div class="timeline">
+        <div class="step"><div class="dot"></div><div class="num">01 / CREATION</div><div class="event">order.confirmed</div><div class="recipient">Kundenbestätigung an die angegebene Adresse.</div><div class="status">demo-queued</div></div>
+        <div class="step"><div class="dot"></div><div class="num">02 / OWNER ALERT</div><div class="event">order.received</div><div class="recipient">Owner-Alert an RintuChowdory@yahoo.com.</div><div class="status">demo-queued</div></div>
+        <div class="step"><div class="dot"></div><div class="num">03 / ADMIN ACTION</div><div class="event">order.shipped</div><div class="recipient">Kunden-Versandinfo erst nach „Mark as shipped“.</div><div class="status">demo-queued</div></div>
+      </div>
+    </div>
+    <div class="note"><strong>Wichtig:</strong> Der Versand wird nicht automatisch bei der Bestellung ausgelöst. Die Demo speichert die Timeline im Browser und stellt sie beim erneuten Öffnen von <span style="font-family:'Courier New',monospace">/checkout</span> wieder her.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wichtige Routen — Luméra</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif;position:relative;overflow:hidden}
+    .wrap{padding:68px 88px 0;position:relative;z-index:1}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#66747b;font-weight:700}
+    .layout{display:grid;grid-template-columns:390px 1fr;gap:92px;margin-top:52px}
+    h1{font-size:76px;line-height:.93;letter-spacing:-4px;margin:0;font-weight:900}
+    .intro{font-size:21px;line-height:1.4;color:#465158;max-width:330px;margin-top:28px}
+    .route-list{border-top:2px solid #0a0a0a}
+    .route{display:grid;grid-template-columns:52px 190px 1fr;gap:18px;align-items:start;border-bottom:1px solid #b7c1c5;padding:12px 0 10px;min-height:72px}
+    .route:last-child{border-bottom:2px solid #0a0a0a}
+    .number{font:700 14px 'Courier New',monospace;color:#a0525f;padding-top:4px}
+    .path{font:700 21px 'Courier New',monospace;letter-spacing:-1px}
+    .desc{font-size:16px;line-height:1.35;color:#536067;padding-top:2px}
+    .protected{color:#4a0e1c}
+    .blue{position:absolute;width:220px;height:120px;background:#cbdfe8;right:46px;top:84px;transform:rotate(14deg)}
+    .pink{position:absolute;width:150px;height:150px;background:#edc8cc;border-radius:50%;right:72px;bottom:62px}
+    .legend{margin-top:18px;font:14px 'Courier New',monospace;color:#66747b}
+    .legend b{color:#4a0e1c}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="blue"></div>
+    <div class="pink"></div>
+    <div class="wrap">
+      <div class="eyebrow">06 / Navigation</div>
+      <div class="layout">
+        <div>
+          <h1>Wichtige<br>Routen.</h1>
+          <div class="intro">Die Anwendung führt Nutzer von der Markenwelt bis zum Bestellstatus — mit einem klar getrennten Admin-Bereich.</div>
+          <div class="legend"><b>●</b> öffentlich &nbsp;&nbsp; <b>◆</b> rollen-geschützt</div>
+        </div>
+        <div class="route-list">
+          <div class="route"><div class="number">01</div><div class="path">/</div><div class="desc">Marken-Homepage mit Hero, Essentials, Bestsellern und Brand Story.</div></div>
+          <div class="route"><div class="number">02</div><div class="path">/catalog</div><div class="desc">Produktkatalog mit Suche, Kategorie-Filterung und Sortierung.</div></div>
+          <div class="route"><div class="number">03</div><div class="path">/checkout</div><div class="desc">EUR-Demo-Checkout und persistente Bestellbenachrichtigungstimeline.</div></div>
+          <div class="route"><div class="number">04</div><div class="path">/account</div><div class="desc">Demo-Konto, Bestellhistorie-Platzhalter und Adressstruktur.</div></div>
+          <div class="route"><div class="number">05</div><div class="path protected">/admin</div><div class="desc">◆ Geschützter Admin-Bereich für Orders und Mark-as-shipped-Aktion.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

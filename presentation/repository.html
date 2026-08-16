@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repository-Struktur — Luméra</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif}
+    .frame{padding:48px 82px 0}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#66747b;font-weight:700}
+    h1{font-size:66px;line-height:.95;letter-spacing:-3px;margin:32px 0 42px;font-weight:900}
+    .layout{display:grid;grid-template-columns:390px 1fr;column-gap:48px;align-items:start}
+    .tree{font-family:"Courier New",monospace;font-size:20px;line-height:1.65;border-top:2px solid #0a0a0a;padding-top:12px}
+    .tree .root{font-weight:700;color:#4a0e1c}
+    .tree .indent{padding-left:28px;color:#263238}
+    .tree .accent{color:#6f858e}
+    .list{border-top:2px solid #0a0a0a;padding-top:4px}
+    .row{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:10px 0;border-bottom:1px solid #b9c2c6;min-height:48px;align-items:start}
+    .row:nth-child(odd){background:#dfe9ed}
+    .folder{font-family:"Courier New",monospace;font-weight:700;font-size:17px;padding-left:12px}
+    .desc{font-size:17px;line-height:1.35;color:#455158;padding-right:8px}
+    .stamp{margin-top:24px;font:14px "Courier New",monospace;letter-spacing:1px;color:#6a767b}
+    .pink{position:absolute;width:112px;height:112px;background:#edc8cc;border-radius:50%;right:58px;top:62px;opacity:.85}
+    .frame{position:relative;z-index:1}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="pink"></div>
+    <div class="frame">
+      <div class="eyebrow">05 / Architektur</div>
+      <h1>Repository-<br>Struktur.</h1>
+      <div class="layout">
+        <div>
+          <div class="tree">
+            <div class="root">lumera-ecommerce/</div>
+            <div class="indent">├── client/</div>
+            <div class="indent">├── server/</div>
+            <div class="indent">├── shared/</div>
+            <div class="indent">├── drizzle/</div>
+            <div class="indent">├── docs/</div>
+            <div class="indent">└── scripts/</div>
+          </div>
+          <div class="stamp">139 TRACKED FILES · MAIN / c91327b</div>
+        </div>
+        <div class="list">
+          <div class="row"><div class="folder">client/</div><div class="desc">Seiten, UI-Komponenten, Theme und tRPC-Client.</div></div>
+          <div class="row"><div class="folder">server/</div><div class="desc">Express-Prozess, Router, Auth-, Datenbank- und Stripe-Grundlagen.</div></div>
+          <div class="row"><div class="folder">shared/</div><div class="desc">Katalog-, Warenkorb- und Order-Lifecycle-Logik.</div></div>
+          <div class="row"><div class="folder">drizzle/</div><div class="desc">Datenbankschema, Migrationen und Relations.</div></div>
+          <div class="row"><div class="folder">docs/</div><div class="desc">Admin-, Testbestellungs- und lokale Setup-Dokumentation.</div></div>
+          <div class="row"><div class="folder">scripts/</div><div class="desc">Deterministische Hilfsskripte für die UI-Erstellung.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

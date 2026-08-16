@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technische Architektur — Luméra</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif;position:relative;overflow:hidden}
+    .wrap{padding:62px 78px 0;position:relative;z-index:1}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#66747b;font-weight:700}
+    .layout{display:grid;grid-template-columns:350px 1fr;gap:40px;margin-top:48px}
+    .headline{font-size:64px;line-height:.96;letter-spacing:-3px;font-weight:900;margin:0}
+    .headline em{font-weight:400}
+    .intro{font-size:18px;line-height:1.45;color:#4e5a60;margin-top:28px;max-width:300px}
+    .stack{padding-top:4px;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+    .layer{display:grid;grid-template-columns:140px 1fr;gap:18px;border-top:2px solid #0a0a0a;padding-top:10px;margin-bottom:12px;min-height:72px}
+    .layer:last-child{margin-bottom:0}
+    .label{font-family:"Courier New",monospace;font-size:14px;letter-spacing:1px;color:#7b3d49;text-transform:uppercase;font-weight:700}
+    .layer h2{font-size:26px;margin:0 0 8px;letter-spacing:-.5px}
+    .layer p{font-size:16px;line-height:1.42;color:#465158;margin:0;max-width:400px}
+    .accent-blue{position:absolute;width:160px;height:90px;background:#cbdfe8;right:44px;bottom:38px;transform:rotate(-13deg);z-index:0}
+    .accent-pink{position:absolute;width:96px;height:96px;background:#edc8cc;border-radius:50%;right:180px;top:94px;z-index:0}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="accent-pink"></div><div class="accent-blue"></div>
+    <div class="wrap">
+      <div class="eyebrow">04 / System</div>
+      <div class="layout">
+        <div>
+          <h1 class="headline">Ein Stack,<br><em>klar geschichtet.</em></h1>
+          <p class="intro">Die Architektur trennt Oberfläche, Serververträge, Datenzugriff und gemeinsame Commerce-Logik.</p>
+        </div>
+        <div class="stack">
+          <div class="layer"><div class="label">01 / Client</div><div><h2>React 19 + Vite</h2><p>Seiten, Navigation, Theme-System, responsive UI und tRPC-Client.</p></div></div>
+          <div class="layer"><div class="label">02 / Server</div><div><h2>Express + tRPC</h2><p>Ein Serverprozess mit typisierten Procedures für Auth, Katalog und Checkout-Grundlagen.</p></div></div>
+          <div class="layer"><div class="label">03 / Data</div><div><h2>Drizzle + MySQL/TiDB</h2><p>Schema- und Migrationsstruktur; gemeinsame Katalog-, Warenkorb- und Lifecycle-Helfer.</p></div></div>
+          <div class="layer"><div class="label">04 / Integrate</div><div><h2>OAuth · Stripe · Vitest</h2><p>Manus-OAuth-Struktur, gehostete Stripe-Session-Grundlage und automatisierte Qualitätsprüfung.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

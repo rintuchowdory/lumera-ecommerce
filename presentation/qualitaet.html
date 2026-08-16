@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qualitätssicherung — Luméra</title>
+  <style>
+    *{box-sizing:border-box}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif;position:relative;overflow:hidden}
+    .wrap{padding:64px 82px 0;position:relative;z-index:1}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#66747b;font-weight:700}
+    h1{font-size:74px;line-height:.94;letter-spacing:-4px;margin:28px 0 0;font-weight:900}
+    h1 em{font-weight:400;font-style:italic}
+    .intro{font-size:20px;line-height:1.4;color:#4a565d;max-width:570px;margin-top:13px}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:55px;border-top:2px solid #0a0a0a;padding-top:16px}
+    .metric{min-height:132px;border-bottom:2px solid #0a0a0a;padding-bottom:14px}
+    .metric .value{font-size:66px;line-height:.9;letter-spacing:-4px;font-weight:900;color:#4a0e1c}
+    .metric .label{font:15px 'Courier New',monospace;letter-spacing:1px;text-transform:uppercase;margin-top:14px;color:#465158}
+    .bottom{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:32px;border-top:1px solid #b9c2c6;padding-top:18px}
+    .bottom h2{font-size:21px;margin:0 0 13px}
+    .bottom p{font-size:16px;line-height:1.45;color:#465158;margin:0}
+    .checks{font:15px 'Courier New',monospace;line-height:1.9;color:#243238}
+    .checks span{color:#4a0e1c;font-weight:700}
+    .accent-blue{position:absolute;width:170px;height:92px;background:#cbdfe8;right:58px;top:78px;transform:rotate(-12deg);z-index:0}
+    .accent-pink{position:absolute;width:110px;height:110px;background:#edc8cc;border-radius:50%;right:178px;bottom:58px;z-index:0}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="accent-blue"></div><div class="accent-pink"></div>
+    <div class="wrap">
+      <div class="eyebrow">07 / Verification</div>
+      <h1>Qualität,<br><em>nachgewiesen.</em></h1>
+      <div class="intro">Der aktuelle Stand wurde im separaten Luméra-Repository reproduzierbar geprüft — mit TypeScript, Vitest und einem vollständigen Produktions-Build.</div>
+      <div class="metrics">
+        <div class="metric"><div class="value">PASS</div><div class="label">pnpm check · TypeScript</div></div>
+        <div class="metric"><div class="value">14</div><div class="label">Vitest-Tests bestanden</div></div>
+        <div class="metric"><div class="value">1.0</div><div class="label">Produktions-Build erfolgreich</div></div>
+      </div>
+      <div class="bottom">
+        <div><h2>Abgedeckte Bereiche</h2><p>Katalogsuche, Filterung und Sortierung · EUR-Warenkorb · Auth-Logout · Order-Lifecycle · Demo-Benachrichtigungen · Persistenz nach Reload.</p></div>
+        <div class="checks"><div><span>✓</span> pnpm check</div><div><span>✓</span> pnpm test · 6 Dateien</div><div><span>✓</span> pnpm build · Vite + Server</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

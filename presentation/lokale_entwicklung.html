@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokale Entwicklung — Luméra</title>
+  <style>
+    *{box-sizing:border-box}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif;position:relative;overflow:hidden}
+    .wrap{padding:64px 64px 0;position:relative;z-index:1}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#66747b;font-weight:700}
+    .title{font-size:68px;line-height:.93;letter-spacing:-4px;font-weight:900;margin-top:28px}
+    .title em{font-style:italic;font-weight:400}
+    /* tighter grid gap to save height */
+    .layout{display:grid;grid-template-columns:480px 1fr;gap:28px;margin-top:28px}
+    .terminal{background:#0a0a0a;color:#eef1f2;min-height:200px;padding:16px 20px;font:17px/1.65 "Courier New",monospace;position:relative}
+    .terminal .comment{color:#8ea4aa}
+    .terminal .accent{color:#edc8cc}
+    .terminal .blue{color:#cbdfe8}
+    .terminal .cursor{position:absolute;right:20px;bottom:16px;width:12px;height:20px;background:#edc8cc}
+    .steps{border-top:2px solid #0a0a0a}
+    /* reduced step height and padding */
+    .step{display:grid;grid-template-columns:40px 140px 1fr;gap:12px;border-bottom:1px solid #b7c1c5;padding:8px 0;min-height:48px;align-items:start}
+    .step:last-child{border-bottom:2px solid #0a0a0a}
+    .num{font:700 14px "Courier New",monospace;color:#a0525f;padding-top:3px}
+    .label{font-size:18px;font-weight:800}
+    .detail{font-size:15px;line-height:1.38;color:#4e5a60}
+    .note{margin-top:8px;font:14px "Courier New",monospace;color:#657178;max-width:520px}
+    /* slightly smaller decorative shapes */
+    .shape-pink{position:absolute;width:120px;height:120px;background:#edc8cc;border-radius:50%;right:66px;top:58px;opacity:.7}
+    .shape-blue{position:absolute;width:160px;height:70px;background:#cbdfe8;right:30px;bottom:34px;transform:rotate(-12deg);opacity:.85}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="shape-pink"></div><div class="shape-blue"></div>
+    <div class="wrap">
+      <div class="eyebrow">08 / Developer setup</div>
+      <div class="title">Lokale<br><em>Entwicklung.</em></div>
+      <div class="layout">
+        <div>
+          <div class="terminal"><div class="comment"># Luméra starten</div><div><span class="accent">git clone</span> https://github.com/<br>rintuchowdory/lumera-ecommerce.git</div><div><span class="accent">cd</span> lumera-ecommerce</div><div><span class="accent">pnpm install</span> --frozen-lockfile</div><div><span class="blue">pnpm dev</span></div><div class="comment"># localhost:3000</div><div class="cursor"></div></div>
+          <div class="note">Die genaue Portbelegung wird vom Serverprozess beziehungsweise der lokalen Umgebung bestimmt.</div>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="num">01</div><div class="label">Voraussetzungen</div><div class="detail">Git, Node.js und pnpm installieren.</div></div>
+          <div class="step"><div class="num">02</div><div class="label">Abhängigkeiten</div><div class="detail">Mit dem Frozen Lockfile reproduzierbar installieren.</div></div>
+          <div class="step"><div class="num">03</div><div class="label">Entwickeln</div><div class="detail">Vite und Express über <code>pnpm dev</code> starten.</div></div>
+          <div class="step"><div class="num">04</div><div class="label">Validieren</div><div class="detail"><code>pnpm check</code>, <code>pnpm test</code> und <code>pnpm build</code> ausführen.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

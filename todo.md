@@ -42,3 +42,10 @@
 - [ ] Complete a real UI click-through of checkout creation, admin shipping, and customer confirmation visibility before the notification checkpoint.
 - [x] Push the current Luméra project state to rintuchowdory/ai-video-generator on GitHub.
 - [x] Create short German documentation for the admin interface and demo test orders.
+- [x] Validate the provided admin-und-testbestellungen.md documentation against the website and fill any documented-flow gaps.
+- [x] Create a separate private GitHub repository for Luméra and move the project there.
+- [x] Remove the accidentally added Luméra copy from rintuchowdory/ai-video-generator without changing the video-generator project files.
+- [x] Verify that Luméra and ai-video-generator are separate repositories with clean remote histories.
+- [x] Verify the standalone Luméra GitHub repository contains all expected project files and passes validation.
+- [x] Create a German local setup and development-server guide for Luméra.
+- [x] Create a presentation overview of the current Luméra project state and repository structure.

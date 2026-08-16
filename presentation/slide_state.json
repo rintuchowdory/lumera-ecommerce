@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "title": "Luméra",
+    "created": 1786904246.801,
+    "last_updated": 1786904705.705,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "titel",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "produktidee",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "funktionsumfang",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "bestelllebenszyklus",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "architektur",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "repository",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "routen",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "qualitaet",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "lokale_entwicklung",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "naechste_schritte",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "titel",
+      "title": "Luméra",
+      "summary": "Premium Beauty & Skincare E-Commerce: aktueller Projektstand und technische Struktur.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "produktidee",
+      "title": "Produktidee",
+      "summary": "Skandinavische Markenästhetik trifft auf modernes Beauty-Commerce-Erlebnis.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "funktionsumfang",
+      "title": "Aktueller Funktionsumfang",
+      "summary": "Startseite, Katalog, Produktdetails, Warenkorb, Konto, Checkout und Admin.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "bestelllebenszyklus",
+      "title": "Bestelllebenszyklus im Demo-Modus",
+      "summary": "Confirmation, Owner-Alert und Shipping als getrennte demo-queued Ereignisse.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "architektur",
+      "title": "Technische Architektur",
+      "summary": "React/Vite, Express, tRPC, Drizzle, OAuth, Stripe-Grundlage und Vitest.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "repository",
+      "title": "Repository-Struktur",
+      "summary": "Verantwortlichkeiten von client, server, shared, drizzle, docs und scripts.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "routen",
+      "title": "Wichtige Routen",
+      "summary": "Homepage, Katalog, Checkout, Account und geschützter Admin-Bereich.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "qualitaet",
+      "title": "Qualitätssicherung",
+      "summary": "TypeScript-Check, 14 bestandene Vitest-Tests und Produktions-Build.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "lokale_entwicklung",
+      "title": "Lokale Entwicklung",
+      "summary": "Clone, install, dev server sowie zentrale Prüf-Befehle.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "naechste_schritte",
+      "title": "Nächste Ausbaustufen",
+      "summary": "Datenbankpersistenz, Stripe-Redirect, E-Mail-Provider, Admin-Ausbau und E2E-Tests.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

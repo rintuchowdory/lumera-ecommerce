@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nächste Ausbaustufen — Luméra</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:#eef1f2;border:8px solid #0a0a0a;color:#0a0a0a;font-family:Arial,Helvetica,sans-serif;position:relative;overflow:hidden}
+    .wrap{padding:62px 78px 0;position:relative;z-index:1}
+    .eyebrow{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#66747b;font-weight:700}
+    .layout{display:grid;grid-template-columns:370px 1fr;gap:36px;margin-top:24px}
+    h1{font-size:70px;line-height:.91;letter-spacing:-4px;margin:0;font-weight:900}
+    h1 em{font-weight:400;font-style:italic}
+    .intro{font-size:20px;line-height:1.42;color:#4a565d;max-width:320px;margin-top:16px}
+    .status{display:inline-block;margin-top:18px;font:14px 'Courier New',monospace;letter-spacing:1px;background:#0a0a0a;color:#fff;padding:8px 11px}
+    .roadmap{border-top:2px solid #0a0a0a}
+    .step{display:grid;grid-template-columns:46px 190px 1fr;gap:12px;align-items:start;border-bottom:1px solid #b8c2c6;padding:8px 0 6px;min-height:64px}
+    .step:last-child{border-bottom:2px solid #0a0a0a}
+    .num{font:700 15px 'Courier New',monospace;color:#a0525f;padding-top:3px}
+    .label{font:700 18px 'Courier New',monospace;letter-spacing:-.5px}
+    .desc{font-size:16px;line-height:1.35;color:#465158}
+    .tag{display:inline-block;margin-top:4px;font:12px 'Courier New',monospace;color:#5d6b72;letter-spacing:1px;text-transform:uppercase}
+    .pink{position:absolute;width:170px;height:170px;background:#edc8cc;border-radius:50%;right:38px;top:76px;opacity:.78}
+    .blue{position:absolute;width:210px;height:96px;background:#cbdfe8;right:72px;bottom:46px;transform:rotate(-12deg);opacity:.9}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="pink"></div><div class="blue"></div>
+    <div class="wrap">
+      <div class="eyebrow">09 / Roadmap</div>
+      <div class="layout">
+        <div>
+          <h1>Nächste<br><em>Ausbaustufen.</em></h1>
+          <div class="intro">Die Demo steht. Der nächste Schritt ist die Überführung in einen vollständig persistierten und operativ versendenden Commerce-Stack.</div>
+          <div class="status">CURRENT STATE · DEMO FOUNDATION</div>
+        </div>
+        <div class="roadmap">
+          <div class="step"><div class="num">01</div><div class="label">Datenpersistenz</div><div class="desc">Produkte, Kategorien, Warenkörbe, Orders, Adressen und Reviews in der Datenbank modellieren.<div class="tag">database / commerce</div></div></div>
+          <div class="step"><div class="num">02</div><div class="label">Stripe-Flow</div><div class="desc">Frontend-Redirect mit der gehosteten Checkout-Session und Webhook-Verarbeitung verbinden.<div class="tag">payments / hosted</div></div></div>
+          <div class="step"><div class="num">03</div><div class="label">E-Mail-Provider</div><div class="desc">Demo-Events an einen echten Zustelldienst anbinden und Zustellstatus protokollieren.<div class="tag">notifications / production</div></div></div>
+          <div class="step"><div class="num">04</div><div class="label">Admin-Ausbau</div><div class="desc">Produkt- und Kategorieverwaltung, Order-Übersicht und Rollenprüfung vollständig datenbankgestützt umsetzen.<div class="tag">operations / roles</div></div></div>
+          <div class="step"><div class="num">05</div><div class="label">E2E-Abdeckung</div><div class="desc">Checkout, Zahlung, Versandstatus, Wiederaufnahme und Benachrichtigungen browserbasiert testen.<div class="tag">quality / release</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
